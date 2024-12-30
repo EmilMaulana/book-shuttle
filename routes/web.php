@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AbsenController;
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('layouts.main');
 });
 
 Route::get('/dashboard', function () {
@@ -16,10 +16,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
-    Route::get('absensi/index', [AbsenController::class, 'index'])->name('absen.index');
-    
-
 });
 
 require __DIR__.'/auth.php';
