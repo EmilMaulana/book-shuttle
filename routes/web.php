@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReservasiController;
 
 Route::get('/', function () {
-    return view('front.index');
+    return view('layouts.main2');
 })->name('index');
 
 
