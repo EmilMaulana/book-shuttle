@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{-- <link rel="stylesheet" href="./css/output.css"> --}}
-    <link rel="stylesheet" href="{{ asset('theme/css/output.css') }}">
+    <link rel="stylesheet" href="./css/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -105,34 +104,44 @@
             </div>
 
             <div class="fixed bottom-0 bg-bg-container w-[430px] h-[62px] border-2 rounded-t-lg flex items-center justify-center">
-                <div class="flex items-center justify-between w-full px-4">
-                    <!-- Pesanan -->
+                <div class="flex items-center justify-center">
+
                     <a href="#">
-                        <div class="w-[86px] h-[60px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500">
+                        <div class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500">
+                            <i class="fa-solid fa-house text-xl"></i>
+                            <small class="text-xs">Beranda</small>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500 ">
                             <i class="fa-solid fa-ticket text-xl"></i>
                             <small class="text-xs">Pesanan</small>
                         </div>
                     </a>
-            
-                    <!-- Beranda (Aktif) -->
+
                     <a href="#">
-                        <div class="w-[86px] h-[60px] flex flex-col justify-center items-center text-[#e33320]">
-                            <i class="fa-solid fa-house text-xl"></i>
-                            <small class="text-xs font-semibold">Beranda</small>
+                        <div class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500 ">
+                            <i class="fa-solid fa-house"></i>
+                            <small class="text-xs">Beranda</small>
                         </div>
                     </a>
-            
-                    <!-- Akun Saya -->
+
                     <a href="#">
-                        <div class="w-[86px] h-[60px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500">
+                        <div class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500 ">
+                            <i class="fa-solid fa-envelope text-xl"></i>
+                            <small class="text-xs">Inbox</small>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500 ">
                             <i class="fa-solid fa-user-large text-xl"></i>
                             <small class="text-xs">Akun Saya</small>
                         </div>
                     </a>
                 </div>
             </div>
-            
-            
         </div>
     </div>
     <script src="https://kit.fontawesome.com/64d7024487.js" crossorigin="anonymous"></script>
@@ -210,4 +219,4 @@
 
     // Auto slide
     setInterval(nextSlide, 15000); // Ganti slide setiap 15 detik
-</script>
+</script> -->
